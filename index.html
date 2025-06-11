@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>נועם סיון – ייעוץ אסטרטגי ובניה ארגונית</title>
+
+  <!-- גופנים -->
+  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS דרך CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS CSS (מקומי) -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- CSS מותאם אישית -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="antialiased text-gray-200 bg-gray-900">
+
+  <!-- Hero Video Background -->
+  <section id="hero" class="relative h-screen overflow-hidden">
+    <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+      <source src="assets/images/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <header class="absolute top-0 w-full z-20">
+      <div class="container mx-auto flex items-center justify-between py-6 px-4">
+        <div class="text-3xl font-bold text-white">נועם סיון</div>
+        <nav>
+          <ul class="flex space-x-8 space-x-reverse text-white">
+            <li><a href="#about" class="hover:text-indigo-300 transition">אודות</a></li>
+            <li><a href="#services" class="hover:text-indigo-300 transition">תחומים</a></li>
+            <li><a href="#audience" class="hover:text-indigo-300 transition">קהלים</a></li>
+            <li><a href="#brands" class="hover:text-indigo-300 transition">מותגים</a></li>
+            <li><a href="#testimonials" class="hover:text-indigo-300 transition">המלצות</a></li>
+            <li><a href="#contact" class="hover:text-indigo-300 transition">צור קשר</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container mx-auto z-10 relative flex flex-col md:flex-row items-center justify-between h-full px-4">
+      <div data-aos="fade-right" class="md:w-1/2 text-center md:text-right">
+        <h1 class="text-6xl font-extrabold leading-tight text-white mb-4">
+          נועם סיון<br>
+          <span class="text-indigo-400">עו"ד &amp; MBA</span>
+        </h1>
+        <p class="text-2xl text-gray-300 mb-6">
+          מנכ"ל בכיר לשעבר ובונה תשתיות ארגוניות חכמות המוביל חברות לצמיחה ברת קיימא.
+        </p>
+        <a href="#contact" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transition">
+          לקביעת פגישת ייעוץ
+        </a>
+      </div>
+      <div data-aos="fade-left" class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <img src="assets/images/profile.jpg" alt="נועם סיון" class="w-72 h-72 object-cover rounded-full border-8 border-gray-800 shadow-2xl">
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider absolute bottom-0 w-full overflow-hidden leading-none">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C600,100 600,100 1200,0 L1200,120 L0,120 Z" fill="#1f2937"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-800 pt-16 pb-20">
+    <div class="container mx-auto md:grid grid-cols-2 gap-12 px-4" data-aos="fade-up">
+      <div>
+        <h2 class="text-4xl font-bold text-white mb-6">על נועם סיון</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          שמי נועם סיון – עורך דין, בעל תואר שני במנהל עסקים, ולשעבר מנכ"ל ובכיר ניהולי במספר מותגים בינלאומיים. אני מלווה חברות בצמיחה, בונה תשתיות ארגוניות חכמות ומוביל הנהלות לצמיחה ברת קיימא – מבפנים החוצה.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          לאורך השנים עמדתי בראש ארגונים גלובליים, ניהלתי מאות עובדים בארץ ובחו"ל, והובלתי שורת תהליכים של טרנספורמציה עסקית: מקונסולידציה של מערכות תפעול, דרך בניית צוותי הנהלה חדשים ועד גיבוש אסטרטגיות חדירה לשווקים זרים.
+        </p>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          היום, דרך חברת הייעוץ שלי, אני מעמיד את הניסיון הזה לרשות מנכ"לים, יזמים ובעלי שליטה – מתוך הבנה עמוקה של האתגרים בשטח, ולא רק של המודלים האקדמיים.
+        </p>
+      </div>
+      <div data-aos="zoom-in" class="relative">
+        <img src="assets/images/about.jpg" alt="עבודה עם צוותים" class="rounded-xl shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-900 py-20">
+    <div class="container mx-auto text-center mb-12 px-4" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-white mb-4">תחומי התמחות</h2>
+      <p class="text-gray-400">ליווי מותאם לכל שלב בעסק – מבנייה ארגונית ועד התרחבות גלובלית</p>
+    </div>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+      <div data-aos="fade-up" class="bg-gray-800 hover:bg-indigo-800 transition p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">בניית ארגון וצוותי הנהלה</h3>
+        <p class="text-gray-300">עיצוב מבנים ארגוניים יעילים, גיוס וחיתוך צוותי הנהלה איכותיים, והנחיית תהליכי צמיחה ארגונית מקצועיים.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="bg-gray-800 hover:bg-indigo-800 transition p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">ליווי מנכ"לים וקבלת החלטות</h3>
+        <p class="text-gray-300">ייעוץ אסטרטגי ברמה גבוהה, ליווי בקבלת החלטות מורכבות, ופיתוח חשיבה מנהיגה המותאמת לאתגרי השוק.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="bg-gray-800 hover:bg-indigo-800 transition p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">תהליכים עסקיים ומודלים תפעוליים</h3>
+        <p class="text-gray-300">בניית תשתיות תפעוליות חכמות, אופטימיזציה של תהליכי עבודה, ויצירת מודלים עסקיים יעילים ובני קיימא.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 hover:bg-indigo-800 transition p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold text-indigo-400 mb-2">התרחבות לשווקים בינלאומיים</h3>
+        <p class="text-gray-300">אסטרטגיות חדירה לשווקים זרים, התאמה תרבותית ורגולטורית, וליווי מלא בתהליכי הקמת פעילות בינלאומית.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audience Section -->
+  <section id="audience" class="bg-gray-800 py-20">
+    <div class="container mx-auto text-center mb-12 px-4" data-aos="fade-down">
+      <h2 class="text-3xl font-bold text-white">קהלי יעד מרכזיים</h2>
+    </div>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+      <div data-aos="zoom-in" class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition">
+        <h4 class="font-semibold text-indigo-400 mb-2">יזמים ובעלי עסקים בצמיחה</h4>
+        <p class="text-gray-300">ליווי בתהליכי התמקצעות, גיוס הון, שיפור רווחיות ויציאה לחברה בע"מ. פתרון לאתגרים בניהול תזרים, צוות מגובש והרחבת פעילות.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="100" class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition">
+        <h4 class="font-semibold text-indigo-400 mb-2">חברות ותיקות בקשיים</h4>
+        <p class="text-gray-300">יציבות עסקית, חידוש אסטרטגי והפיכת הפסדים לרווח. ניסיון מוכח בניהול משברים והחייאת מותגים.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="200" class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition">  
+        <h4 class="font-semibold text-indigo-400 mb-2">מנהלים בכירים ודירקטוריונים</h4>
+        <p class="text-gray-300">ייעוץ אסטרטגי, תכנון לשווקים בינ"ל, מנטורינג וקבלת החלטות מורכבות.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="300" class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition">
+        <h4 class="font-semibold text-indigo-400 mb-2">משקיעים וקרנות השקעה</h4>
+        <p class="text-gray-300">שיפור ביצועי פורטפוליו, ליווי השקעות חכמות, מניעת סיכונים ובקרה.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="400" class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition">
+        <h4 class="font-semibold text-indigo-400 mb-2">מותגים בינלאומיים</h4>
+        <p class="text-gray-300">כניסה חלקה לשוק הישראלי עם התאמה תרבותית ושיווקית מלאה. ניסיון בהשקות מוצלחות.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="500" class="bg-gray-700 p-6 rounded-xl hover:scale-105 transform transition">
+        <h4 class="font-semibold text-indigo-400 mb-2">עורכי דין ונאמנים</h4>
+        <p class="text-gray-300">ליווי עסקי בתהליכי חדלות פירעון וכינוס נכסים. שילוב ייחודי של הבנה משפטית ועסקית.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+<section id="brands" class="bg-gray-900 py-20">
+  <div class="container mx-auto text-center mb-12 px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-white">מותגים בינלאומיים שליוויתי בישראל</h2>
+  </div>
+  <div class="container mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 px-4">
+    <!-- Card 1 -->
+    <div data-aos="zoom-in" class="p-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-3xl shadow-lg hover:scale-105 transform transition">
+      <div class="bg-white rounded-2xl p-8 flex items-center justify-center h-32">
+        <img src="assets/images/brand1.png" alt="לוגו 1" class="h-16 object-contain">
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div data-aos="zoom-in" data-aos-delay="100" class="p-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-3xl shadow-lg hover:scale-105 transform transition">
+      <div class="bg-white rounded-2xl p-8 flex items-center justify-center h-32">
+        <img src="assets/images/brand2.png" alt="לוגו 2" class="h-16 object-contain">
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div data-aos="zoom-in" data-aos-delay="200" class="p-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-3xl shadow-lg hover:scale-105 transform transition">
+      <div class="bg-white rounded-2xl p-8 flex items-center justify-center h-32">
+        <img src="assets/images/brand3.png" alt="לוגו 3" class="h-16 object-contain">
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div data-aos="zoom-in" data-aos-delay="300" class="p-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-3xl shadow-lg hover:scale-105 transform transition">
+      <div class="bg-white rounded-2xl p-8 flex items-center justify-center h-32">
+        <img src="assets/images/brand4.png" alt="לוגו 4" class="h-16 object-contain">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-gray-800 py-20">
+    <div class="container mx-auto text-center mb-12 px-4" data-aos="fade-down">
+      <h2 class="text-3xl font-bold text-white">מה הלקוחות אומרים</h2>
+    </div>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <div data-aos="fade-right" class="bg-gray-700 p-8 rounded-xl shadow-lg">
+        <p class="text-gray-300 mb-4">“נועם הוביל אותנו בתהליך שינוי ארגוני מורכב. המקצועיות והרגישות שלו הפכו את התוצאות לטובות בהרבה ממה שדמיינו.”</p>
+        <h4 class="font-semibold text-indigo-400">— גלית כהן, מנכ"לית מוצריב</h4>
+      </div>
+      <div data-aos="fade-left" class="bg-gray-700 p-8 rounded-xl shadow-lg">
+        <p class="text-gray-300 mb-4">“הייעוץ של נועם קידם אותנו מהר לעומת מתחרים גדולים בהרבה. הוא באמת מבין גם עסק וגם את האתגרים היומיומיים.”</p>
+        <h4 class="font-semibold text-indigo-400">— יוסי לוי, בעלים של סטארטאפ טכנולוגי</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="bg-gray-900 py-20">
+    <div class="container mx-auto text-right px-4" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-white mb-4">השאירו פרטים או התקשרו</h2>
+      <p class="text-gray-400 mb-6">
+        ייעוץ אסטרטגי אישי: <a href="tel:+972528888660" class="text-indigo-400 font-semibold">052-8888660</a>
+      </p>
+      <form action="#" class="max-w-lg mx-auto md:mx-0 text-right">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input name="name" type="text" placeholder="שם מלא" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+          <input name="phone" type="tel" placeholder="טלפון" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        </div>
+        <div class="mt-4">
+          <input name="email" type="email" placeholder="דוא\"ל" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        </div>
+        <button type="submit" class="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition">
+          שלח
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    © 2025 נועם סיון – כל הזכויות שמורות
+  </footer>
+
+  <!-- AOS JS דרך CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JS מותאם אישית -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

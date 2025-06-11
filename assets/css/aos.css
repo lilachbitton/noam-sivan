@@ -1,0 +1,123 @@
+/*!
+ * AOS 2.3.1
+ * https://michalsnik.github.io/aos/
+ * (c) 2019 Michal Snik
+ * License: MIT
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.aos-init {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.aos-animate {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+[data-aos][data-aos][data-aos-duration] {
+  transition-duration: var(--aos-duration) !important;
+}
+
+[data-aos][data-aos][data-aos-delay] {
+  transition-delay: var(--aos-delay) !important;
+}
+
+[data-aos][data-aos][data-aos-easing] {
+  transition-timing-function: var(--aos-easing) !important;
+}
+
+/* -- OFFSETS -- */
+[data-aos^="fade"][data-aos^="fade"] {
+  transform: translate(0, var(--aos-offset)) scale(1);
+}
+
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-down"],
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-up"] {
+  transform: translate(0, var(--aos-offset)) scale(1);
+}
+
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-right"],
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-left"] {
+  transform: translate(var(--aos-offset), 0) scale(1);
+}
+
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-up-left"],
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-up-right"] {
+  transform: translate(calc(var(--aos-offset) * -1), var(--aos-offset)) scale(1);
+}
+
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-down-left"],
+[data-aos^="fade"][data-aos^="fade"][data-aos^="fade-down-right"] {
+  transform: translate(calc(var(--aos-offset) * -1), calc(var(--aos-offset) * -1)) scale(1);
+}
+
+/* -- FLIP -- */
+[data-aos^="flip"][data-aos^="flip"] {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+[data-aos^="flip"][data-aos^="flip"].aos-init {
+  transform-style: preserve-3d;
+}
+
+[data-aos^="flip-left"].aos-init {
+  transform: rotateY(-45deg);
+}
+
+[data-aos^="flip-right"].aos-init {
+  transform: rotateY(45deg);
+}
+
+[data-aos^="flip-up"].aos-init {
+  transform: rotateX(45deg);
+}
+
+[data-aos^="flip-down"].aos-init {
+  transform: rotateX(-45deg);
+}
+
+[data-aos^="flip-left"].aos-animate,
+[data-aos^="flip-right"].aos-animate,
+[data-aos^="flip-up"].aos-animate,
+[data-aos^="flip-down"].aos-animate {
+  transform: rotate(0);
+}
+
+/* -- ZOOM -- */
+[data-aos^="zoom"][data-aos^="zoom"] {
+  transform: scale(var(--aos-scale));
+}
+
+[data-aos^="zoom"].aos-init {
+  transform: scale(var(--aos-scale));
+}
+
+[data-aos^="zoom-in"].aos-animate,
+[data-aos^="zoom-out"].aos-animate {
+  transform: scale(1);
+}
+
+/* -- OFFSET VARS -- */
+:root {
+  --aos-offset: 0.2rem;
+  --aos-delay: 0s;
+  --aos-duration: 0.5s;
+  --aos-easing: ease;
+  --aos-scale: 1;
+}
+
+/* Responsive */
+@media (prefers-reduced-motion: reduce) {
+  .aos-init,
+  .aos-animate {
+    transition: none !important;
+  }
+}
